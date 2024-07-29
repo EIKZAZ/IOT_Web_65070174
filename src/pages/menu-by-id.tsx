@@ -1,4 +1,4 @@
-import { Alert, Badge, Button, Container, Divider } from "@mantine/core";
+import { Alert, Button, Container, Divider } from "@mantine/core";
 import Layout from "../components/layout";
 import { Link, useParams } from "react-router-dom";
 import { Menu } from "../lib/models";
