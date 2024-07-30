@@ -20,9 +20,9 @@ import MenuByIdPage from "./pages/menu-by-id";
 import MenuCreatePage from "./pages/menu-create";
 import MenuEditById from "./pages/menu-edit-by-id";
 
-// import OrderCreatePage from "./pages/menu-order";
-// import OrderByIdPage from "./pages/order-by-id";
-// import SeeOrdersPage from "./pages/seeorders";
+import OrderCreatePage from "./pages/order-create";
+import OrderByIdPage from "./pages/order-by-id";
+import OrdersPage from "./pages/orders";
 
 const theme = createTheme({
   primaryColor: "orange",
@@ -66,19 +66,18 @@ const router = createBrowserRouter([
     path: "/menu/:menuId/edit",
     element: <MenuEditById />,
   },
-
-  // {
-  //   path: "/orders",
-  //   element: <SeeOrdersPage />,
-  // },
-  // {
-  //   path: "/orders/create",
-  //   element: <OrderCreatePage />,
-  // },
-  // {
-  //   path: "/orders/:orderId",
-  //   element: <OrderByIdPage />,
-  // },
+  {
+    path: "/orders",
+    element: <OrdersPage />,
+  },
+  {
+    path: "/orders/create",
+    element: <OrderCreatePage />,
+  },
+  {
+    path: "/orders/:orderId",
+    element: <OrderByIdPage />,
+  },
   
 ]);
 
