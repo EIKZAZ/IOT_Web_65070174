@@ -5,6 +5,7 @@ import { Menu } from "../lib/models";
 import useSWR from "swr";
 import Loading from "../components/loading";
 import { IconAlertTriangleFilled, IconEdit } from "@tabler/icons-react";
+import piccoffee from "../assets/images/coffee.jpg";
 
 export default function menuByIdPage() {
   const { menuId } = useParams();
@@ -33,7 +34,7 @@ export default function menuByIdPage() {
               <p className="italic text-neutral-500 mb-4"></p>
               <div className="grid grid-cols-1 lg:grid-cols-3">
                 <img
-                  src="https://placehold.co/150x200"
+                  src={piccoffee}
                   alt={menu.name}
                   className="w-full object-cover aspect-[3/4]"
                 />

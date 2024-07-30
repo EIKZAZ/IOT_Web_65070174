@@ -7,6 +7,7 @@ import { Alert, Button } from "@mantine/core";
 import { IconAlertTriangleFilled, IconPlus } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import piccoffee from "../assets/images/coffee.jpg";
 
 export default function menusPage() {
   const { data: menu, error } = useSWR<Menu[]>("/menu");
@@ -59,7 +60,7 @@ export default function menusPage() {
             {menu?.map((menu) => (
               <div className="border border-solid border-neutral-200" key={menu.id}>
                 <img
-                  src="https://placehold.co/150x200"
+                  src={piccoffee}
                   alt={menu.name}
                   className="w-full object-cover aspect-[3/4]"
                 />
