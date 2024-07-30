@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import cafeBackgroundImage from "../assets/images/bg-cafe-2.jpg";
+import picbook from "../assets/images/Book.jpg";
 import useSWR from "swr";
 import { Book } from "../lib/models";
 import Loading from "../components/loading";
@@ -54,7 +55,7 @@ export default function BooksPage() {
             {books?.map((book) => (
               <div className="border border-solid border-neutral-200" key={book.id}>
                 <img
-                  src="https://placehold.co/150x200"
+                  src={picbook}
                   alt={book.title}
                   className="w-full object-cover aspect-[3/4]"
                 />

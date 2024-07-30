@@ -92,8 +92,23 @@ export default function BookCreatePage() {
             />
 
             {/* TODO: เพิ่มรายละเอียดหนังสือ */}
+            <TextInput
+              label="รายละเอียดหนังสือ"
+              placeholder="รายละเอียดหนังสือ"
+              {...bookCreateForm.getInputProps("detail")}
+            />
             {/* TODO: เพิ่มเรื่องย่อ */}
+            <TextInput
+              label="เรื่องย่อ"
+              placeholder="เรื่องย่อ"
+              {...bookCreateForm.getInputProps("recap")}
+            />
             {/* TODO: เพิ่มหมวดหมู่(s) */}
+            <TextInput
+              label="หมวดหมู่"
+              placeholder="หมวดหมู่"
+              {...bookCreateForm.getInputProps("category")}
+            />
 
             <Checkbox
               label="เผยแพร่"

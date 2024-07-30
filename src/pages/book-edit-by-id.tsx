@@ -164,9 +164,24 @@ export default function BookEditById() {
                 />
 
                 {/* TODO: เพิ่มรายละเอียดหนังสือ */}
+                <TextInput
+                  label="รายละเอียดหนังสือ"
+                  placeholder="รายละเอียดหนังสือ"
+                  {...bookEditForm.getInputProps("detail")}
+                />
                 {/* TODO: เพิ่มเรื่องย่อ */}
+                <TextInput
+                  label="เรื่องย่อ"
+                  placeholder="เรื่องย่อ"
+                  {...bookEditForm.getInputProps("recap")}
+                />
                 {/* TODO: เพิ่มหมวดหมู่(s) */}
-
+                <TextInput
+                  label="หมวดหมู่"
+                  placeholder="หมวดหมู่"
+                  {...bookEditForm.getInputProps("category")}
+                />
+                
                 <Checkbox
                   label="เผยแพร่"
                   {...bookEditForm.getInputProps("is_published", {
