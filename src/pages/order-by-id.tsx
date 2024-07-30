@@ -29,7 +29,7 @@ export default function OrderByIdPage() {
         message: "ลบออเดอร์นี้ออกจากระบบเรียบร้อยแล้ว",
         color: "red",
       });
-      navigate("/order");
+      navigate("/orders");
     } catch (error) {
       if (error instanceof AxiosError) {
         if (error.response?.status === 404) {

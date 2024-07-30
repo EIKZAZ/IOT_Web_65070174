@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import cafeBackgroundImage from "../assets/images/bg-cafe-2.jpg";
+import cafeBackgroundImage from "../assets/images/coffee-shop.jpg";
 import useSWR from "swr";
 import { Menu } from "../lib/models";
 import Loading from "../components/loading";
@@ -81,7 +81,7 @@ export default function menusPage() {
                     variant="primary"
                     className="flex items-center space-x-2"
                   >
-                  สั่งกาแฟ
+                  สั่งเครื่องดื่ม
                   </Button>
                 </div>
               </div>
