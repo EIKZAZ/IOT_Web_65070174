@@ -95,12 +95,12 @@ export default function OrderByIdPage() {
 
                   <h3>ราคา(ต่อที่)</h3>
                   <p className="indent-4">
-                    {order.price}
+                    {order.price/order.amount}
                   </p>
 
                   <h3>ราคารวม</h3>
                   <p className="indent-4">
-                    {totalPrice}
+                    {totalPrice/order.amount}
                   </p>
                 </div>
               </div>
