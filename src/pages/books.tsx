@@ -54,11 +54,13 @@ export default function BooksPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {books?.map((book) => (
               <div className="border border-solid border-neutral-200" key={book.id}>
-                <img
-                  src={picbook}
-                  alt={book.title}
-                  className="w-full object-cover aspect-[3/4]"
-                />
+                <div className="w-full justify-center aspect-[3/4]"> 
+                  <img
+                    src={picbook}
+                    alt={book.title}
+                    className="w-full  self-center aspect-[3/4]"
+                  />
+                </div>
                 <div className="p-4">
                   <h2 className="text-lg font-semibold line-clamp-2">{book.title}</h2>
                   <p className="text-xs text-neutral-500">โดย {book.author}</p>

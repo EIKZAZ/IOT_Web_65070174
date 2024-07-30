@@ -181,7 +181,7 @@ export default function BookEditById() {
                   placeholder="หมวดหมู่"
                   {...bookEditForm.getInputProps("category")}
                 />
-                
+
                 <Checkbox
                   label="เผยแพร่"
                   {...bookEditForm.getInputProps("is_published", {
